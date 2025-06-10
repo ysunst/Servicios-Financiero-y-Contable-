@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#17913207;
+    --color-secundario:#1e7b97;
+    --color-terciario: #65b946;
+    --color-hover: #272727;
+
+
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color:var(--color-primario);
+    color: var(--color-secundario);   
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+
+
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+
+
+
+}
+
+.Presentacion{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.Presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 1rem;
+     text-align: justify;
+     
+
+}
+
+.Presentacion__contenido__titulo{
+    font-size: 2rem;
+    font-family: var(--fuente-krona);
+    text-align: justify;
+}
+
+.titulo-destaque{
+
+    color: var(--color-terciario);
+}
+
+
+.servicios {
+  padding: 2rem;
+  background: #17913207;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1e7b97;
+  font-family: var(--fuente-krona);
+
+}
+
+.servicios__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  font-family: var(--fuente-krona);
+}
+
+.servicio {
+  background: #c0ecd4;
+  
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(8, 17, 15, 0.1);
+  transition: transform 0.3s ease;
+  
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+}
+
+.servicio i {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.servicio h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.servicio ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.servicio ul li {
+  padding: 0.3rem 0;
+  color: #504f4f;
+}
+
+.Presentacion__enlaces__link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.Presentacion__contenido__texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    text-align: justify;
+}
+
+.Presentacion__Enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.Presentacion__enlaces_subtitulo{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.Presentacion__enlaces__link{
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    
+}
+.Presentacion__enlaces__link:hover{
+    background-color: var(--color-hover);
+}
+.Presentacion__imagen {
+    width: 50%;
+    min-height: 400px;
+    max-height: 1000px;
+    object-fit: contain; /* Muestra toda la imagen sin recortarla */
+    display: block;
+    margin: auto; /* Centra si es necesario */
+}
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+
+}
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+    .Presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+    .Presentacion__contenido{
+        width: auto;
+    }
+
+}
